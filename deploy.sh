@@ -25,11 +25,11 @@ echo "Deploying alerts..."
 add_profiled
 
 echo "Check if ZSH is installed.."
-$file_zsh="/etc/zsh/zshrc"
+file_zsh="/etc/zsh/zshrc"
 HAS_ZSH=$(grep -o -m 1 "zsh" /etc/shells)
 if [ ! -z $HAS_ZSH ]; then
     echo "ZSH is installed, deploy alerts to zshrc"
-    if grep -q "$ALERTSCRIPT_PATH" "$file"; ##note the space after the string you are searching for
+    if grep -q "$ALERTSCRIPT_PATH" "$file_zsh"; ##note the space after the string you are searching for
     then
     echo "ZSH has been deployed"
     else
