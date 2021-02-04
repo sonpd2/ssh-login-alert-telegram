@@ -4,7 +4,7 @@ add_profiled(){
 cat <<EOF > /etc/profile.d/telegram-alert.sh
 #!/usr/bin/env bash
 # Log connections
-bash $ALERTSCRIPT_PATH
+bash $ALERTSCRIPT_PATH bash
 EOF
 }
 
@@ -12,7 +12,7 @@ add_zsh () {
 cat <<EOF >> /etc/zsh/zshrc
 
 # Log connections
-bash $ALERTSCRIPT_PATH
+bash $ALERTSCRIPT_PATH zsh
 EOF
 }
 
