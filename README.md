@@ -14,7 +14,8 @@ Work on all popular linux system (Debian, Ubuntu, Arch Linux etc..)
 
 2) Edit two configuration variables by editing credentials.config:
 ```vim credentials.config```
-
+- Create new bot and get API Key use https://t.me/botfather
+- GET ID use https://telegram.me/myidbot
 3) Add this script when user connect with the deploy script:
 ```bash deploy.sh```
 
