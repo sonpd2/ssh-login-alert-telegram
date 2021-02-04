@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+ALERTSCRIPT_PATH="/opt/ssh-login-alert-telegram/alert.sh"
 remove_profiled(){
 FILE="/etc/profile.d/telegram-alert.sh"
 if [ -f "$FILE" ]; then
