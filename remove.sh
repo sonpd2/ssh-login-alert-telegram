@@ -14,7 +14,7 @@ remove_zsh() {
 FILE="/etc/zsh/zshrc"
 cp "$FILE" "$FILE-bk"
 echo "$FILE exists and has been backup to $FILE-bk"
-sed -i "s/bash $ALERTSCRIPT_PATH/#bash/g" "$FILE"
+sed -i "s/bash $ALERTSCRIPT_PATH//g" "$FILE"
 echo "ZSH remove done at file $FILE"
 }
 
