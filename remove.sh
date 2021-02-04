@@ -12,9 +12,11 @@ fi
 
 remove_zsh() {
 FILE="/etc/zsh/zshrc"
+line_old="bash $ALERTSCRIPT_PATH zsh"
+line_new=""
 cp "$FILE" "$FILE-bk"
 echo "$FILE exists and has been backup to $FILE-bk"
-sed -i "s/bash $ALERTSCRIPT_PATH//g" "$FILE"
+sed -i "s%$line_old%$line_new%g" "$FILE"
 echo "ZSH remove done at file $FILE"
 }
 
