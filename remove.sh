@@ -18,6 +18,9 @@ sed -i "s/bash $ALERTSCRIPT_PATH/#bash $ALERTSCRIPT_PATH/g" FILE
 echo "ZSH remove done at file $FILE"
 }
 
+echo "Remove starting..."
+remove_profiled
+
 file_zsh="/etc/zsh/zshrc"
 HAS_ZSH=$(grep -o -m 1 "zsh" /etc/shells)
 if [ ! -z $HAS_ZSH ]; then
